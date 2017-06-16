@@ -68,5 +68,20 @@ pub fn build_cli() -> App<'static, 'static> {
                 )
             )
         )
+        (@subcommand door =>
+            (about: "Controls door")
+            (@subcommand outside =>
+                (about: "Opens outside door")
+            )
+            (@subcommand auto =>
+                (about: "Controls automatic opening mode")
+                (@subcommand enable =>
+                    (about: "Enables automatic mode - allows visitors to enter by ringing")
+                )
+                (@subcommand disable =>
+                    (about: "Disables automatic mode")
+                )
+            )
+        )
     )
 }

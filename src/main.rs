@@ -69,4 +69,21 @@ fn main() {
             }
         }
     }
+    if let Some(matches) = matches.subcommand_matches("door") {
+        use phc::door::Door;
+
+        let mut door = Door::new().unwrap();
+
+        if let Some(_) = matches.subcommand_matches("outside") {
+            door.open_outside().unwrap()
+        }
+        if let Some(matches) = matches.subcommand_matches("auto") {
+            if let Some(_) = matches.subcommand_matches("enable") {
+                door.enable_auto().unwrap()
+            }
+            if let Some(_) = matches.subcommand_matches("disable") {
+                door.disable_auto().unwrap()
+            }
+        }
+    }
 }

@@ -272,7 +272,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "progressbar_hackerspace_ctl"
 version = "0.1.0"
-source = "git+https://github.com/Kixunil/progressbar_hackerspace_ctl#e00692c99d050bd1428671b6765c81186e4e8fc3"
+source = "git+https://github.com/Kixunil/progressbar_hackerspace_ctl#550b314afa637bb6dfa11c477a7e89d89fa16198"
 dependencies = [
  "reqwest 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]

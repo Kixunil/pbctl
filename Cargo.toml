@@ -1,0 +1,12 @@
+[package]
+name = "pbctl"
+version = "0.1.0"
+authors = ["Martin Habovštiak <martin.habovstiak@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+progressbar_hackerspace_ctl = { git = "https://github.com/Kixunil/progressbar_hackerspace_ctl" }
+clap = "2.24"
+
+[build-dependencies]
+clap = "2.24"

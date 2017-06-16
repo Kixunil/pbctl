@@ -4,8 +4,6 @@ extern crate clap;
 
 mod cli;
 
-use clap::{Arg, App, SubCommand};
-
 fn main() {
     let matches = cli::build_cli().get_matches();
 
